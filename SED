@@ -1,0 +1,8 @@
+#Imagine you have a .txt file with a lot of emails, looking like this <example1@gmail.com>; example2@gmail.com <example2@gmail.com>; example3@theclosingfirmmex.com
+#To much emails and lines, so you want to separe it in lines because the file is actually just ONE string
+#You can use SED command to create lines with each email, you can tell that actually email is repeating twice and after a ";" a new email starts
+#The code will be
+$sed "s/;/\n/g" yourfile.txt
+
+#You can lear more from here :) https://geekland.eu/uso-del-comando-sed-en-linux-y-unix-con-ejemplos/
+#And here https://desarrollowp.com/blog/tutoriales/buscando-patron-con-expresiones-regulares/#:~:text=%C2%BFQu%C3%A9%20son%20las%20expresiones%20regulares,de%20una%20cadena%20de%20texto.&text=Son%20utilizadas%20para%20buscar%20patrones,de%20sustituci%C3%B3n%2C%20validaciones%2C%20etc%E2%80%A6
